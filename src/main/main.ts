@@ -18,6 +18,8 @@ class AppUpdater {
   }
 }
 
+console.log('Application started');
+
 let mainWindow: BrowserWindow | null = null;
 
 ipcMain.on('ipc-example', async (event, arg) => {
@@ -35,7 +37,7 @@ ipcMain.on('split-frames', async (_, data) => {
   };
 
   console.log('1');
-  await extractFrames(
+  extractFrames(
     data.sourceLocation,
     data.outputLocation,
     data.skip,

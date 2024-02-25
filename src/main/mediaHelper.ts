@@ -37,7 +37,7 @@ export async function selectPath(): Promise<string> {
   return outputPaths[0];
 }
 
-export async function extractFrames(
+export function extractFrames(
   sourcePath: string,
   outputPath: string,
   skipFrames: number,

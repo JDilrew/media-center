@@ -4,10 +4,10 @@ import { Button, LinearProgress, TextField, Typography } from '@mui/material';
 import FolderRoundedIcon from '@mui/icons-material/FolderRounded';
 import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
 import { ThemeProvider } from '@mui/material/styles';
+import { AnimatePresence, motion } from 'framer-motion';
 import theme from './Theme';
 import './App.css';
 import { Task } from '../shared/commonTypes';
-import { AnimatePresence, motion } from 'framer-motion';
 
 function Root() {
   const [sourceLocation, setSourceLocation] = useState<string>('');
